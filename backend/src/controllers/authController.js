@@ -60,8 +60,7 @@ exports.googleAuthCallback = async (req, res) => {
     res.cookie('token', sessionToken, {
       httpOnly: true,
       secure: true,
-      sameSite: 'none',
-      maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+      sameSite: 'none'
     });
 
     res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/dashboard`);
