@@ -59,8 +59,8 @@ exports.googleAuthCallback = async (req, res) => {
     // Set token inside an HTTP-only cookie
     res.cookie('token', sessionToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
+      secure: true, // Required for 'none'
+      sameSite: 'none', // CRITICAL: Allows Vercel cookie reading from Render domain
       maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
     });
 
