@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  
+  <!-- Microphone Core -->
+  <rect x="224" y="128" width="64" height="128" rx="32" fill="#ffffff" />
+  <path d="M160 256v16c0 53 43 96 96 96s96-43 96-96v-16 M256 368v64 M208 432h96" 
+        fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+        
+  <!-- Voice Soundwaves -->
+  <path d="M120 180v96 M72 204v48 M392 180v96 M440 204v48" 
+        fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" />
+</svg>
